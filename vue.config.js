@@ -20,9 +20,9 @@ module.exports = {
   devServer: {
     open: false, //是否自动弹出浏览器页面
     // public: '192.168.0.104',
-    host: "192.168.0.104",
-    port: '8081',
-    https: true,   //是否使用https协议
+    host: "127.0.0.1",
+    port: '8080',
+    https: false,   //是否使用https协议
     hotOnly: false, //是否开启热更新
     proxy: {
       '/MiniProgram': {
@@ -45,7 +45,7 @@ module.exports = {
           pxtorem({
             rootValue: 75,
             propList: ["*"],
-            //selectorBlackList: ['.van-'] // 过滤掉.vant-开头的class，不进行rem转换
+            selectorBlackList: ['.van-'] // 过滤掉.vant-开头的class，不进行rem转换
           })
         ]
       }

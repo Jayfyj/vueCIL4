@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-      <!-- <myTitle/> -->
+      <myTitle/>
       <keep-alive>
           <router-view v-if="$route.meta.keepAlive">
           </router-view>
       </keep-alive>
      <router-view v-if="!$route.meta.keepAlive"></router-view>
-     <!-- <myBottomTab/> -->
-     <van-button type="primary">主要按钮</van-button>
+     <myBottomTab/>
+     <!-- <van-button type="primary">主要按钮</van-button> -->
   </div>
 </template>
 

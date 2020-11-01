@@ -3,7 +3,7 @@
     <!--滑动区域-->
     <div ref="mescroll" class="mescroll">
       <div>
-        <p class="notice">本Demo的下拉刷新: 添加新数据到列表顶部</p>
+        <!-- <p class="notice">本Demo的下拉刷新: 添加新数据到列表顶部</p> -->
         <ul id="newsList" class="news-list">
           <li v-for="news in newArr" :key="news.id">
             <p>{{news.title}}</p>
