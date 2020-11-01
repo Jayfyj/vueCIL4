@@ -1,0 +1,17 @@
+{ 
+  "url":"/server/business/get_business_status",
+  "header": {
+    "code": 0,
+    "message": "0"
+  },
+  "body": {
+    "list":[
+		{"text":1},
+		{"text":1},
+		{"text":1},
+		{"text":1},
+		{"text":1},
+		{"text":1}
+	]
+  }
+}

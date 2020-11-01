@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    -moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'FZLTHJW';
+}
+
+
+/* 2020-3-3 开始*/
+
+@charset "utf-8";
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+code,
+form,
+legend,
+b,
+button,
+input,
+textarea,
+blockquote,
+article,
+aside,
+footer,
+header,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+abbr {
+    border: 0;
+}
+
+table td {
+    word-break: break-all;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: 700;
+}
+
+input,
+button,
+textarea,
+select {
+    font-size: inherit;
+    font-size: 100%;
+    font-family: inherit;
+}
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark-color(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: -internal-light-dark-color(white, black);
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 6.3333px Arial;
+    /*padding: 1px 0px;
+    border-width: 2px; */
+    border-style: inset;
+    border-color: initial;
+    border-image: initial
+}
+
+/*
+vant ui 修改样式
+
+start
+
+*/
+/* 上下拉功能*/
+
+/* 加载所有出现的提示语 */
+.van-list__finished-text{
+    font-size: 28px;
+    color: red;
+}
+
+/* 隐藏下拉的提示语 */
+.van-pull-refresh__head{
+    display: none;
+}
+
+/* 隐藏加载的提示语 */
+.van-loading{
+    display: none;
+}
+
+/* 上下拉的框高度 */
+.van-pull-refresh{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+
+/*提示框*/
+.van-toast{
+    width: 200px;
+    height: 200px;
+}
+
+.van-toast__text{
+    font-size: 28px;
+}
+
+.van-toast .van-loading{
+    display: block;
+}
+.van-toast .van-loading .van-loading__spinner{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+
+
