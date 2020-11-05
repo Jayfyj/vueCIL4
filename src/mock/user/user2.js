@@ -7,7 +7,7 @@ const data1={
 };
 
  
-Mock.mock(RegExp(urlApi.getBusinessStatus.url + ".*"), urlApi.getBusinessStatus.urlMethod, (options)=>{
+Mock.mock(RegExp(urlApi.user2.url + ".*"), urlApi.user2.urlMethod, (options)=>{
   console.log(options)
   return Mock.mock(data1);
 })

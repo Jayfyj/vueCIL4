@@ -20,8 +20,8 @@ export default {
   data(){
     return{
       tabList:[
-        {tabIcon:"iconfont icon-shouye1",tabSelectIcon:"",tabName:"首页",tabURL:"",tabActive:true,tabId:0},
-        {tabIcon:"iconfont icon-fenlei1",tabSelectIcon:"",tabName:"分类",tabURL:"",tabActive:false,tabId:1},
+        {tabIcon:"iconfont icon-shouye1",tabSelectIcon:"",tabName:"首页",tabURL:"Home",tabActive:true,tabId:0},
+        {tabIcon:"iconfont icon-fenlei1",tabSelectIcon:"",tabName:"分类",tabURL:"Search",tabActive:false,tabId:1},
         {tabIcon:"iconfont icon-sousuo",tabSelectIcon:"",tabName:"搜索",tabURL:"",tabActive:false,tabId:2},
         {tabIcon:"iconfont icon-wode1",tabSelectIcon:"",tabName:"我的",tabURL:"",tabActive:false,tabId:3}
       ]
@@ -34,7 +34,10 @@ export default {
         if(ele.tabId!=item.tabId){
           ele.tabActive =false;
         }else{
-          item.tabActive = true;
+          ele.tabActive = true;
+          this.$router.push({
+            name:ele.tabURL,
+          })
         }
       });
     }

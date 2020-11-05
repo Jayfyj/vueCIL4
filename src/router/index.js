@@ -6,13 +6,27 @@ Vue.use(VueRouter);
 
 const routes = [{
         path: "/",
+        redirect:"/Home"
+          
+    },
+    {
+        path: "/Home",
         name: "Home",
         component: Home,
         meta: {
-            title: '',
-            keepAlive: true,
+            keepAlive: true
         }
-    }
+      
+    },
+    {
+        path: "/Search",
+        name: "Search",
+        component: ()=>import("@/views/Search.vue"),
+        meta: {
+            title: '',
+            keepAlive: false,
+        }
+    },
 ]
 
 const router = new VueRouter({

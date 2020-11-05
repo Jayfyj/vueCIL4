@@ -10,14 +10,14 @@ import { common } from './assets/common.js'
 import './filter'
 import { Toast } from 'vant'
 import { Dialog } from 'vant';
-//import Mock from '@/mock'
+import Mock from '@/mock'
 
 // import echarts from 'echarts'
-import Vconsole from "vconsole"
+// import Vconsole from "vconsole"
 import { watch } from "less";
-
+import $ from 'zepto'
 // Vue.prototype.$echarts = echarts;
-Vue.prototype.$vConsole = new Vconsole();
+// Vue.prototype.$vConsole = new Vconsole();
 Vue.use(common);
 Vue.use(Toast);
 Vue.use(Dialog);

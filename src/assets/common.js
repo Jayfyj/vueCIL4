@@ -12,7 +12,8 @@ function processEnvURL(){
     var url
     if(env == "development"){
         console.log("开发")
-        url = '/MiniProgram'
+        // url = '/MiniProgram'
+        url = '';
     }else{
         console.log("生产")
         url = '';
@@ -181,7 +182,7 @@ function toastShow(text, time) {
 function sys_doAjax(obj, RES, ERR) {
     //加载
     this.toastShow("", 0)
-    var url = Utils.address + obj.servicePath;
+    var url = Utils.address + obj.url;
     var jsonData = obj.jsonData || {};
     var defaults = {
             method: obj.urlMethod,
